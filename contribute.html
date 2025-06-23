@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriCC Contributor Analysis Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.8em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            font-size: 1.3em;
+        }
+
+        /* Participation Section Styles */
+        .participation-section {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 35px rgba(255, 154, 158, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .participation-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .participation-title {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .participation-description {
+            font-size: 1.2em;
+            color: #34495e;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .participation-actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .action-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .action-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            border-color: #667eea;
+        }
+
+        .action-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .action-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .action-description {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .action-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 300px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            z-index: 1000;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 10px;
+            border: 1px solid #e0e0e0;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .dropdown-content.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+
+        .dropdown-item {
+            color: #2c3e50;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .dropdown-item:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 20px;
+            font-weight: 700;
+            border-radius: 12px 12px 0 0;
+            text-align: center;
+        }
+        
+        .full-width {
+            grid-column: 1 / -1;
+        }
+        
+        canvas {
+            max-height: 400px;
+        }
+        
+        @media (max-width: 768px) {
+            .chart-grid, .coverage-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            .country-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .participation-actions {
+                grid-template-columns: 1fr;
+            }
+
+            .participation-title {
+                font-size: 1.8em;
+            }
+
+            .participation-description {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <div class="container">  
+    <h1>Want to Contribute?</h1>
+    <p class="subtitle">Join the AfriCC initiative and help us build a comprehensive corpus of African languages! <br>
+                Your contributions will help preserve and promote linguistic diversity across the continent.</p>
+    <!-- Participation Section -->
+    <div class="participation-section">
+        <div class="participation-header">
+            <h2 class="participation-title">URL Contribution</h2>
+            <p class="participation-description">
+                
+            </p>
+        </div>
+        
+        <div class="participation-actions">
+            <div class="action-card">
+                <span class="action-icon">📋</span>
+                <div class="action-title">Call for Participation</div>
+                <div class="action-description">
+                    Read the detailed guidelines and requirements for contributing to the AfriCC project.
+                </div>
+                <a href="#" class="action-button" onclick="openCFP()">View CfP</a>
+            </div>
+            
+            <div class="action-card">
+                <span class="action-icon">🌍</span>
+                <div class="action-title">Language Resources</div>
+                <div class="action-description">
+                    Explore the complete list of African languages and find resources for your contributions.
+                </div>
+                <div class="dropdown">
+                    <button class="action-button" onclick="toggleDropdown()">Browse Languages ▼</button>
+                    <div id="languageDropdown" class="dropdown-content">
+                        <div class="dropdown-header">Countries</div>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Algeria')">Algeria</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Angola')">Angola</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Benin')">Benin</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Botswana')">Botswana</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Burkina Faso')">Burkina Faso</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Burundi')">Burundi</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Cameroon')">Cameroon</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Cape Verde')">Cape Verde</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Central African Republic')">Central African Republic</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Chad')">Chad</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Comoros')">Comoros</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Congo')">Congo</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Côte d\'Ivoire')">Côte d'Ivoire</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Democratic Republic of the Congo')">Democratic Republic of the Congo</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Djibouti')">Djibouti</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Egypt')">Egypt</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Equatorial Guinea')">Equatorial Guinea</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Eritrea')">Eritrea</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Eswatini')">Eswatini</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Ethiopia')">Ethiopia</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Gabon')">Gabon</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Gambia')">Gambia</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Ghana')">Ghana</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Guinea')">Guinea</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Guinea-Bissau')">Guinea-Bissau</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Kenya')">Kenya</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Lesotho')">Lesotho</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Liberia')">Liberia</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Libya')">Libya</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Madagascar')">Madagascar</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Malawi')">Malawi</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Mali')">Mali</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Mauritania')">Mauritania</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Mauritius')">Mauritius</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Mayotte')">Mayotte</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Morocco')">Morocco</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Mozambique')">Mozambique</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Namibia')">Namibia</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Niger')">Niger</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Nigeria')">Nigeria</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Réunion')">Réunion</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Rwanda')">Rwanda</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Sao Tome and Principe')">Sao Tome and Principe</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Senegal')">Senegal</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Seychelles')">Seychelles</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Sierra Leone')">Sierra Leone</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Somalia')">Somalia</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('South Africa')">South Africa</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('South Sudan')">South Sudan</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Sudan')">Sudan</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Tanzania')">Tanzania</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Togo')">Togo</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Tunisia')">Tunisia</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Uganda')">Uganda</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Zambia')">Zambia</a>
+                        <a href="#" class="dropdown-item" onclick="openLanguageResource('Zimbabwe')">Zimbabwe</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="action-card">
+                <span class="action-icon">📊</span>
+                <div class="action-title">Example Country</div>
+                <div class="action-description">
+                    See how data is organized for Nigeria as a reference for structuring your country's contributions.
+                </div>
+                <a href="#" class="action-button" onclick="openExampleSheet()">View Nigeria Example</a>
+            </div>
+        </div>
+    </div>
+    <div class="participation-section">
+        <div class="participation-header">
+            <h2 class="participation-title">LID Data Annotation</h2>
+            <p class="participation-description">
+                
+            </p>
+        </div>
+        
+        <div class="participation-actions">
+            <div class="action-card">
+                <span class="action-icon">📋</span>
+                <div class="action-title">Join our Hackathon</div>
+                <div class="action-description">
+                    Participate in our upcoming hackathon on June 26th 2025 to help annotate language identification data for African languages.
+                </div>
+                <a href="#" class="action-button" onclick="openCFP()">View CfP</a>
+            </div>
+            
+            <div class="action-card">
+                <span class="action-icon">🌍</span>
+                <div class="action-title">Annotation Website</div>
+                <div class="action-description">
+                    Dynabench is the platform where you can contribute to language identification annotations for African languages.
+                </div>
+                <a href="https://dynabench.org/tasks/text-language-identification" class="action-button" target="_blank">Annotate</a>
+            </div>
+            
+            <div class="action-card">
+                <span class="action-icon">🎥</span>
+                <div class="action-title">See Annotation Guide</div>
+                <div class="action-description">
+                    Watch the video guide on how to annotate language identification data for African languages.
+                </div>
+                <a href="https://www.youtube.com/watch?v=fk_QVfW-8pw" class="action-button" target="_blank">Watch</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+<script>
+  // Participation section functions
+        function toggleDropdown() {
+            const dropdown = document.getElementById('languageDropdown');
+            dropdown.classList.toggle('show');
+        }
+
+        // Close dropdown when clicking outside
+        window.onclick = function(event) {
+            if (!event.target.matches('.action-button')) {
+                const dropdowns = document.getElementsByClassName('dropdown-content');
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        function openCFP() {
+            // Replace with actual CFP document URL
+            window.open('https://www.linkedin.com/posts/abumafrim_update-africc-lid-hackathon-new-date-activity-7341122872259575808-Y1gI?utm_source=share&utm_medium=member_desktop&rcm=ACoAABQF2MABVYdxnE6R2lC30Quu7Z-t6tEWXc0', '_blank');
+        }
+
+        function openLanguageResource(language) {
+            // Replace with actual language resource URLs
+            const urls = {
+                "Algeria": "https://docs.google.com/spreadsheets/d/13ALU7n4smq5pOlXj4xbXCox5yDdARnpO/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Ethiopia": "https://docs.google.com/spreadsheets/d/1I7C8SnYZG7_b74W3gAeqC0biwcYGR4Jl/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Niger": "https://docs.google.com/spreadsheets/d/1fXHdsXNtt-kDfIHGGIOTJx0EG4f9E3V4/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Angola": "https://docs.google.com/spreadsheets/d/1pYqSYj_A4PWKQj9270bDWoe5Y-Y9Mvb5/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Gabon": "https://docs.google.com/spreadsheets/d/1xhPjkc23QqKYfTZv6DEQYPfna9jwysmg/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Nigeria": "https://docs.google.com/spreadsheets/d/1_bDWfRy2DgABYxetirWyUZbReYJJ_FUj/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Benin": "https://docs.google.com/spreadsheets/d/1ZUUyejvAasrPsSl1x2iIAjB64vRMMq1t/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Gambia": "https://docs.google.com/spreadsheets/d/1tasMzE_Jo2Ms_m5aQZzTz4_kGJJxiFa7/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Réunion": "https://docs.google.com/spreadsheets/d/11bsoDfG4e3D7yYsc01kTy4ZoDPlhpb3N/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Botswana": "https://docs.google.com/spreadsheets/d/1aTIUqrIj4VB3xet-K7w9osfiIR1BM1dR/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Ghana": "https://docs.google.com/spreadsheets/d/1wDQgj_Ym9edDD9KBDgmkA_hXH0LXF77M/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Rwanda": "https://docs.google.com/spreadsheets/d/1LQg74rK7io1S5yDtwATMb3zjdt1MmtWi/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Burkina Faso": "https://docs.google.com/spreadsheets/d/1V4-2kG5bcKz0iu2WfL7N9qI5HjR13AzX/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Guinea": "https://docs.google.com/spreadsheets/d/1ISYRIgdrRZR91d6pUABNP80QhTUZApFC/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Saint Helena": "https://docs.google.com/spreadsheets/d/1NhsZBqIt70nKni18vMt4LsgIbSwf37w8/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Burundi": "https://docs.google.com/spreadsheets/d/10IrwTgpvz6qdZXxfkI95Rso2saNEUzfF/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Guinea-Bissau": "https://docs.google.com/spreadsheets/d/18TmI4sFjE1tNDVVB5-LudjvNpKTWNCyw/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "São Tomé and Príncipe": "https://docs.google.com/spreadsheets/d/12BVipK-o6pdUg4sMJR_C12AgKNKYVdAV/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Cameroon": "https://docs.google.com/spreadsheets/d/1b29c1xOIlFiFiNRUkT91vIEnBrPiHTFA/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Kenya": "https://docs.google.com/spreadsheets/d/1TpyEOHO62iG8HioDXekMgRE9go5Vei2m/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Senegal": "https://docs.google.com/spreadsheets/d/1Xh4-yyYWstYmSfkPLP4MyxFjX4U_pUwg/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Cape Verde": "https://docs.google.com/spreadsheets/d/1xmSCOBNI5j1hftjOjc1P1vWCGADcn-ki/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Lesotho": "https://docs.google.com/spreadsheets/d/1C-DfDCysc98gHwnXMAeAUjAcypB_02ga/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Seychelles": "https://docs.google.com/spreadsheets/d/1GyB0KenGbmNMIgfAWIr1qIml6i_pI5BO/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Central African Republic": "https://docs.google.com/spreadsheets/d/1Ts85Kfd0bslUpWj0WCrdMTs5rFUnho-z/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Liberia": "https://docs.google.com/spreadsheets/d/1SYYG2rYUo-3oHpC2xUezZbzybQPS86_U/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Sierra Leone": "https://docs.google.com/spreadsheets/d/1FeFmNKKgeWtnpueUAoMU8iGNWLHDxOvH/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Chad": "https://docs.google.com/spreadsheets/d/1H4J-VYU9ILarphHmo6flUnhJBqYwZzVJ/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Libya": "https://docs.google.com/spreadsheets/d/1GzpUrQBSialOy3R5BbyoTlrczJVxFcOh/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Somalia": "https://docs.google.com/spreadsheets/d/1PVdttpcrVXLjiOyyi7evq4oLwO9oHwrp/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Comoros": "https://docs.google.com/spreadsheets/d/1lMSSZHas0MW-Lmyssi2RwFVtJSqKuYK7/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Madagascar": "https://docs.google.com/spreadsheets/d/1Rk8oDwBXGXaFgaoEq5qw4A9lECMZkTvb/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "South Africa": "https://docs.google.com/spreadsheets/d/1UxCQDxj88Ko1brsEYa49X6fzxDXyLSEX/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Congo": "https://docs.google.com/spreadsheets/d/1L3X8c0pQGbJA3ga_zEzq72yFvR9PLul5/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Malawi": "https://docs.google.com/spreadsheets/d/1AeDJxO-MoxT771diUU2fgFjzzjGLpBSR/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "South Sudan": "https://docs.google.com/spreadsheets/d/19Z_gV86qTA7h8MEKjFLVl60J7IwFkNFX/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Cote d\'Ivoire": "https://docs.google.com/spreadsheets/d/1UgEdAS6oGB6tMO0Qry2M58o_8w-2xJAy/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Mali": "https://docs.google.com/spreadsheets/d/1YdB2_p0Gk6hZ7ZyXTdDjqQSgA2D1cfrv/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Sudan": "https://docs.google.com/spreadsheets/d/18c9F6x2MmBiFgoWOATzF11htI5-3xGfU/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Democratic Republic of Congo": "https://docs.google.com/spreadsheets/d/1bY-MxTw5MXO9iIOWer1uk-JNcIFC9Jj2/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Mauritania": "https://docs.google.com/spreadsheets/d/1xjAOoXw1Z8FOyOrA7a0WFcCzZ2oGgvqO/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Tanzania": "https://docs.google.com/spreadsheets/d/1UDyLlNJB1Q9r54Mo8LlrIFBwt0EQBY7i/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Djibouti": "https://docs.google.com/spreadsheets/d/1T7FL23CMeIEy6KFScMIZqn10iOe4mu0b/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Mauritius": "https://docs.google.com/spreadsheets/d/1I8jQyHKF5PGf9Zc6Ru6kQTFWmaXKUrQF/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Togo": "https://docs.google.com/spreadsheets/d/1OX_TtIq3dMhChJrYJPLjpHnBZbNPS4fX/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Egypt": "https://docs.google.com/spreadsheets/d/1pbiPmoyB4lJqxu2ucM7lHTamchFJP1EW/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Mayotte": "https://docs.google.com/spreadsheets/d/1bdRMuWhXNlrTVZr29-UgXHn4CpHRT3Dh/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Tunisia": "https://docs.google.com/spreadsheets/d/1CiDJ8QcQkH8r6BnksJ_P-ea2EcAwnj5d/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Equatorial Guinea": "https://docs.google.com/spreadsheets/d/1jcFpZK10bUxTFsHzTUnkr4NbCv7PIuyE/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Morocco": "https://docs.google.com/spreadsheets/d/1VrY8XnIRGePrVYQkcYxBEjuHRDM5LtZG/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Uganda": "https://docs.google.com/spreadsheets/d/1JOGogFq1Tgo70t89c93enANNMPxGQV7v/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Eritrea": "https://docs.google.com/spreadsheets/d/1x8xgQoX51WoyKyjCfXEjZkdG5R29VYdg/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Mozambique": "https://docs.google.com/spreadsheets/d/1CeqQ-7Zm-Y9tFz8c0oJY-zR9ULbAWGba/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Zambia": "https://docs.google.com/spreadsheets/d/1fM_pshLpohKj5NJnUw0j8xVlasUxUUhR/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Eswatini": "https://docs.google.com/spreadsheets/d/1-0FgFc11wr1vNTyL_YWuhfxmDlqlGAzR/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Namibia": "https://docs.google.com/spreadsheets/d/1upwPl6EIsfP55BHvnhdmDCP8OnmGF4e0/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true",
+                "Zimbabwe": "https://docs.google.com/spreadsheets/d/12weOc-5NaYf3Ut9SWf2kjsjhJ1pyahN6/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true"
+            };
+            
+            window.open(urls[language] || 'https://example.com/language-resources', '_blank');
+        }
+
+        function openExampleSheet() {
+            // Replace with actual Nigeria example Google Sheet URL
+            window.open('https://docs.google.com/spreadsheets/d/1_bDWfRy2DgABYxetirWyUZbReYJJ_FUj/edit?usp=drive_link&ouid=104195395968659809166&rtpof=true&sd=true', '_blank');
+        }
+</script>
+</body>
+</html>

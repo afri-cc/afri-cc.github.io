@@ -50,11 +50,14 @@
         }
         
         .buttons-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-direction: row;
             gap: 40px;
             margin-top: 40px;
+            justify-content: center;
+            flex-wrap: nowrap; /* optional: allows wrapping on smaller screens */
         }
+
         
         .nav-button {
             position: relative;
@@ -73,7 +76,11 @@
             justify-content: center;
             min-height: 280px;
             animation: fadeInUp 1s ease-out;
+
+            width: 340px;
+            flex-shrink: 0;
         }
+
         
         .nav-button:nth-child(1) {
             animation-delay: 0.2s;
@@ -292,6 +299,20 @@
                 <div class="button-icon">🌍</div>
                 <div class="button-title">LID Annotation</div>
                 <div class="button-description">Explore language identification annotations datasets across African languages</div>
+            </a>
+
+            <a href="contribute.html" class="nav-button">
+                <div class="button-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M12 22l10-5v-6l-10 5-10-5v6l10 5z"></path>
+                        <path d="M12 12l10-5v6l-10 5-10-5v-6l10 5z"></path>
+                    </svg>
+                </div>
+                <div class="button-title">Contribute?</div>
+                <div class="button-description">
+                    Interested in contributing to the AfriCC project? Join us in building a comprehensive African web archive!
+                </div>
             </a>
         </div>
     </div>
