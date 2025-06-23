@@ -325,22 +325,30 @@
             font-weight: 700;
             color: #667eea;
             font-size: 1.2em;
-            min-width: 40px;
-        }
-        
-        .contributor-name {
-            font-weight: 600;
-            color: #2c3e50;
-            flex-grow: 1;
-            margin-left: 15px;
+            min-width: 20px;
         }
         
         .contributor-count {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
-            padding: 8px 15px;
+            padding: 0 12px;          /* ✅ wider padding for space */
             border-radius: 20px;
             font-weight: 600;
+            flex-shrink: 0;             /* ✅ prevent shrinking */
+            margin-left: 10px;          /* ✅ space from name */
+            text-align: center;
+            min-width: 40px;            /* ✅ optional: ensures consistent size */
+        }
+
+        .contributor-name {
+            font-weight: 600;
+            color: #2c3e50;
+            flex-grow: 1;
+            margin-left: 15px;
+            margin-right: 10px;         /* ✅ space before count */
+            overflow: hidden;           /* ✅ in case name is long */
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         
         .coverage-grid {
@@ -5490,8 +5498,8 @@
               return `
                   <div class="contributor-item">
                       <div class="contributor-rank">#${index + 1}</div>
-                      <div class="contributor-name">${name || 'Unknown'}</div>
                       <div class="contributor-count">${count || 0}</div>
+                      <div class="contributor-name">${name || 'Unknown'}</div>
                   </div>
               `;
           }).join('');
@@ -5535,8 +5543,8 @@
                       <div class="contributors-title">Top Contributors:</div>
                       ${country.top_contributors ? country.top_contributors.slice(0, 3).map(([name, count]) => `
                           <div class="top-contributor">
-                              <span class="contributor-name">${name}</span>
                               <span class="contributor-count">${count}</span>
+                              <span class="contributor-name">${name}</span>
                           </div>
                       `).join('') : ''}
                   </div>
