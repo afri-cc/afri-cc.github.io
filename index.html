@@ -50,14 +50,11 @@
         }
         
         .buttons-container {
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 40px;
             margin-top: 40px;
-            justify-content: center;
-            flex-wrap: nowrap; /* optional: allows wrapping on smaller screens */
         }
-
         
         .nav-button {
             position: relative;
@@ -76,11 +73,7 @@
             justify-content: center;
             min-height: 280px;
             animation: fadeInUp 1s ease-out;
-
-            width: 340px;
-            flex-shrink: 0;
         }
-
         
         .nav-button:nth-child(1) {
             animation-delay: 0.2s;
