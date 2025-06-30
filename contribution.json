@@ -5,8 +5,8 @@
       "languages": [
         {
           "name": "Hausa",
-          "url_count": 113,
-          "contributor_count": 19,
+          "url_count": 114,
+          "contributor_count": 20,
           "contributors": [
             "Tasi'u Jibril",
             "Daniel Adediran",
@@ -111,7 +111,7 @@
             "Yusuf Aliyu",
             "Yusuf Aliyu",
             "Yusuf Aliyu",
-            "Ahmad Mustapha Wali/Buhari Hafizu Auwalu",
+            "Ahmad Mustapha Wali",
             "Atiku Abubakar",
             "Atiku Abubakar",
             "Atiku Abubakar",
@@ -123,7 +123,8 @@
             "Fatima Abubakar",
             "Oyinkansola Onwuchekwa",
             "Oyinkansola Onwuchekwa",
-            "Segun Aroyehun"
+            "Segun Aroyehun",
+            "Nur Bala Rabiu"
           ],
           "top_contributors": [
             [
@@ -350,46 +351,46 @@
           ]
         }
       ],
-      "total_urls": 209,
+      "total_urls": 210,
       "total_contributors": 31,
       "unique_contributors": [
-        "Popoola, Babatunde Olasayo",
-        "Safiya Murtala Muhammad",
-        "Ahmad Mustapha Wali",
-        "Fatima Abubakar",
-        "Adamu Lawan",
-        "Ayodele Awokoya",
-        "Sa'ad Nasir Bashir",
-        "Abubakar Usman",
-        "Yusuf Aliyu",
-        "Salim Yahuza Gwarjo",
-        "Daniel Adediran",
-        "Mustapha Lawal",
-        "Atiku Abubakar",
-        "Kamorudeen Amuda",
-        "Idris Abdulmumin",
-        "Segun Aroyehun",
-        "Muhammad Musa Isa",
-        "Tasi'u Jibril",
-        "Ahmad Mustapha Wali/Buhari Hafizu Auwalu",
-        "Chisom Winifred Anene",
-        "Obinna Okoyeigbo",
-        "Ahmad Mustapha",
-        "Sagiru Wakili Musa",
-        "Habeeb Balogun",
         "Daud Abolade",
-        "Bolaji Toheeb",
-        "Bola Agbonile",
+        "Sagiru Wakili Musa",
+        "Kamorudeen Amuda",
+        "Sa'ad Nasir Bashir",
+        "Safiya Murtala Muhammad",
+        "Ahmad Mustapha",
         "Lukman Enegi Ismaila",
-        "Oyinkansola Onwuchekwa",
+        "Bolaji Toheeb",
         "Faisal Muhammad Adam",
-        "Abdulrosheed Olalekan Fadipe"
+        "Bola Agbonile",
+        "Popoola, Babatunde Olasayo",
+        "Oyinkansola Onwuchekwa",
+        "Yusuf Aliyu",
+        "Tasi'u Jibril",
+        "Ahmad Mustapha Wali",
+        "Mustapha Lawal",
+        "Segun Aroyehun",
+        "Obinna Okoyeigbo",
+        "Fatima Abubakar",
+        "Atiku Abubakar",
+        "Chisom Winifred Anene",
+        "Ayodele Awokoya",
+        "Abdulrosheed Olalekan Fadipe",
+        "Adamu Lawan",
+        "Salim Yahuza Gwarjo",
+        "Idris Abdulmumin",
+        "Habeeb Balogun",
+        "Muhammad Musa Isa",
+        "Abubakar Usman",
+        "Daniel Adediran",
+        "Nur Bala Rabiu"
       ],
       "language_stats": {
         "Hausa": {
           "name": "Hausa",
-          "url_count": 113,
-          "contributor_count": 19,
+          "url_count": 114,
+          "contributor_count": 20,
           "contributors": [
             "Tasi'u Jibril",
             "Daniel Adediran",
@@ -494,7 +495,7 @@
             "Yusuf Aliyu",
             "Yusuf Aliyu",
             "Yusuf Aliyu",
-            "Ahmad Mustapha Wali/Buhari Hafizu Auwalu",
+            "Ahmad Mustapha Wali",
             "Atiku Abubakar",
             "Atiku Abubakar",
             "Atiku Abubakar",
@@ -506,7 +507,8 @@
             "Fatima Abubakar",
             "Oyinkansola Onwuchekwa",
             "Oyinkansola Onwuchekwa",
-            "Segun Aroyehun"
+            "Segun Aroyehun",
+            "Nur Bala Rabiu"
           ],
           "top_contributors": [
             [
@@ -804,8 +806,8 @@
             6
           ],
           [
-            "Ahmad Mustapha Wali/Buhari Hafizu Auwalu",
-            1
+            "Ahmad Mustapha Wali",
+            2
           ],
           [
             "Atiku Abubakar",
@@ -817,6 +819,10 @@
           ],
           [
             "Fatima Abubakar",
+            1
+          ],
+          [
+            "Nur Bala Rabiu",
             1
           ],
           [
@@ -858,10 +864,6 @@
           [
             "Idris Abdulmumin",
             2
-          ],
-          [
-            "Ahmad Mustapha Wali",
-            1
           ]
         ]
       },
@@ -1343,20 +1345,20 @@
       "total_urls": 69,
       "total_contributors": 15,
       "unique_contributors": [
-        "Minyechil Alehegn",
-        "Walelign Tewabe",
+        "Derartu Dagne",
+        "Beyene Bedasa",
+        "Tadesse Desatw",
+        "Teklay Birhane",
         "Tadesse Destaw",
         "Tamirat Herago",
-        "Derartu Dagne",
-        "Teklay Birhane",
         "Girma yohannis",
+        "Mahlet Taye",
+        "Walelign Tewabe",
         "Atnafu",
-        "Tadesse Desatw",
-        "Beyene Bedasa",
+        "Dawit Shibabaw",
         "Gebrekirstos G. Gebremeskel",
         "Abel mulat",
-        "Mahlet Taye",
-        "Dawit Shibabaw",
+        "Minyechil Alehegn",
         "Redet"
       ],
       "language_stats": {
@@ -1653,6 +1655,321 @@
       ]
     },
     {
+      "name": "Kenya",
+      "languages": [
+        {
+          "name": "Swahili",
+          "url_count": 49,
+          "contributor_count": 4,
+          "contributors": [
+            "Millicent Ochieng",
+            "Millicent Ochieng",
+            "Millicent Ochieng",
+            "Everlyn Asiko Chimoto",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Millicent Ochieng",
+            "Millicent Ochieng",
+            "Carol Muchemi",
+            "Carol Muchemi",
+            "Carol Muchemi",
+            "Carol Muchemi",
+            "Carol Muchemi"
+          ],
+          "top_contributors": [
+            [
+              "Verrah Otiende",
+              38
+            ],
+            [
+              "Millicent Ochieng",
+              5
+            ],
+            [
+              "Carol Muchemi",
+              5
+            ],
+            [
+              "Everlyn Asiko Chimoto",
+              1
+            ]
+          ]
+        },
+        {
+          "name": "Luo",
+          "url_count": 14,
+          "contributor_count": 2,
+          "contributors": [
+            "Kamau Wahome",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende"
+          ],
+          "top_contributors": [
+            [
+              "Verrah Otiende",
+              13
+            ],
+            [
+              "Kamau Wahome",
+              1
+            ]
+          ]
+        },
+        {
+          "name": "Kikuyu",
+          "url_count": 3,
+          "contributor_count": 2,
+          "contributors": [
+            "Kamau Wahome",
+            "Kamau Wahome",
+            "Carol Muchemi"
+          ],
+          "top_contributors": [
+            [
+              "Kamau Wahome",
+              2
+            ],
+            [
+              "Carol Muchemi",
+              1
+            ]
+          ]
+        }
+      ],
+      "total_urls": 66,
+      "total_contributors": 5,
+      "unique_contributors": [
+        "Everlyn Asiko Chimoto",
+        "Kamau Wahome",
+        "Verrah Otiende",
+        "Carol Muchemi",
+        "Millicent Ochieng"
+      ],
+      "language_stats": {
+        "Swahili": {
+          "name": "Swahili",
+          "url_count": 49,
+          "contributor_count": 4,
+          "contributors": [
+            "Millicent Ochieng",
+            "Millicent Ochieng",
+            "Millicent Ochieng",
+            "Everlyn Asiko Chimoto",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Millicent Ochieng",
+            "Millicent Ochieng",
+            "Carol Muchemi",
+            "Carol Muchemi",
+            "Carol Muchemi",
+            "Carol Muchemi",
+            "Carol Muchemi"
+          ],
+          "top_contributors": [
+            [
+              "Verrah Otiende",
+              38
+            ],
+            [
+              "Millicent Ochieng",
+              5
+            ],
+            [
+              "Carol Muchemi",
+              5
+            ],
+            [
+              "Everlyn Asiko Chimoto",
+              1
+            ]
+          ]
+        },
+        "Luo": {
+          "name": "Luo",
+          "url_count": 14,
+          "contributor_count": 2,
+          "contributors": [
+            "Kamau Wahome",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende",
+            "Verrah Otiende"
+          ],
+          "top_contributors": [
+            [
+              "Verrah Otiende",
+              13
+            ],
+            [
+              "Kamau Wahome",
+              1
+            ]
+          ]
+        },
+        "Kikuyu": {
+          "name": "Kikuyu",
+          "url_count": 3,
+          "contributor_count": 2,
+          "contributors": [
+            "Kamau Wahome",
+            "Kamau Wahome",
+            "Carol Muchemi"
+          ],
+          "top_contributors": [
+            [
+              "Kamau Wahome",
+              2
+            ],
+            [
+              "Carol Muchemi",
+              1
+            ]
+          ]
+        }
+      },
+      "contributor_productivity": {
+        "high_producers": [
+          [
+            "Verrah Otiende",
+            51
+          ]
+        ],
+        "medium_producers": [],
+        "low_producers": [
+          [
+            "Millicent Ochieng",
+            5
+          ],
+          [
+            "Everlyn Asiko Chimoto",
+            1
+          ],
+          [
+            "Carol Muchemi",
+            6
+          ],
+          [
+            "Kamau Wahome",
+            3
+          ]
+        ]
+      },
+      "top_contributors": [
+        [
+          "Verrah Otiende",
+          51
+        ],
+        [
+          "Carol Muchemi",
+          6
+        ],
+        [
+          "Millicent Ochieng",
+          5
+        ],
+        [
+          "Kamau Wahome",
+          3
+        ],
+        [
+          "Everlyn Asiko Chimoto",
+          1
+        ]
+      ]
+    },
+    {
       "name": "Egypt",
       "languages": [
         {
@@ -1770,8 +2087,8 @@
       "total_urls": 64,
       "total_contributors": 3,
       "unique_contributors": [
-        "Yasmin Moslem",
         "Mahmoud Hossam",
+        "Yasmin Moslem",
         "Xuanli He"
       ],
       "language_stats": {
@@ -1922,237 +2239,138 @@
       ]
     },
     {
-      "name": "Kenya",
+      "name": "Niger",
       "languages": [
         {
-          "name": "Swahili",
-          "url_count": 44,
-          "contributor_count": 3,
-          "contributors": [
-            "Millicent Ochieng",
-            "Millicent Ochieng",
-            "Millicent Ochieng",
-            "Everlyn Asiko Chimoto",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Millicent Ochieng",
-            "Millicent Ochieng"
-          ],
-          "top_contributors": [
-            [
-              "Verrah Otiende",
-              38
-            ],
-            [
-              "Millicent Ochieng",
-              5
-            ],
-            [
-              "Everlyn Asiko Chimoto",
-              1
-            ]
-          ]
-        },
-        {
-          "name": "Luo",
-          "url_count": 14,
-          "contributor_count": 2,
-          "contributors": [
-            "Kamau Wahome",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende"
-          ],
-          "top_contributors": [
-            [
-              "Verrah Otiende",
-              13
-            ],
-            [
-              "Kamau Wahome",
-              1
-            ]
-          ]
-        },
-        {
-          "name": "Kikuyu",
-          "url_count": 2,
+          "name": "Hausa",
+          "url_count": 50,
           "contributor_count": 1,
           "contributors": [
-            "Kamau Wahome",
-            "Kamau Wahome"
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam"
           ],
           "top_contributors": [
             [
-              "Kamau Wahome",
-              2
+              "Faisal Muhammad Adam",
+              50
             ]
           ]
         }
       ],
-      "total_urls": 60,
-      "total_contributors": 4,
+      "total_urls": 50,
+      "total_contributors": 1,
       "unique_contributors": [
-        "Millicent Ochieng",
-        "Kamau Wahome",
-        "Verrah Otiende",
-        "Everlyn Asiko Chimoto"
+        "Faisal Muhammad Adam"
       ],
       "language_stats": {
-        "Swahili": {
-          "name": "Swahili",
-          "url_count": 44,
-          "contributor_count": 3,
-          "contributors": [
-            "Millicent Ochieng",
-            "Millicent Ochieng",
-            "Millicent Ochieng",
-            "Everlyn Asiko Chimoto",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Millicent Ochieng",
-            "Millicent Ochieng"
-          ],
-          "top_contributors": [
-            [
-              "Verrah Otiende",
-              38
-            ],
-            [
-              "Millicent Ochieng",
-              5
-            ],
-            [
-              "Everlyn Asiko Chimoto",
-              1
-            ]
-          ]
-        },
-        "Luo": {
-          "name": "Luo",
-          "url_count": 14,
-          "contributor_count": 2,
-          "contributors": [
-            "Kamau Wahome",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende",
-            "Verrah Otiende"
-          ],
-          "top_contributors": [
-            [
-              "Verrah Otiende",
-              13
-            ],
-            [
-              "Kamau Wahome",
-              1
-            ]
-          ]
-        },
-        "Kikuyu": {
-          "name": "Kikuyu",
-          "url_count": 2,
+        "Hausa": {
+          "name": "Hausa",
+          "url_count": 50,
           "contributor_count": 1,
           "contributors": [
-            "Kamau Wahome",
-            "Kamau Wahome"
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam",
+            "Faisal Muhammad Adam"
           ],
           "top_contributors": [
             [
-              "Kamau Wahome",
-              2
+              "Faisal Muhammad Adam",
+              50
             ]
           ]
         }
@@ -2160,213 +2378,17 @@
       "contributor_productivity": {
         "high_producers": [
           [
-            "Verrah Otiende",
-            51
+            "Faisal Muhammad Adam",
+            50
           ]
         ],
         "medium_producers": [],
-        "low_producers": [
-          [
-            "Millicent Ochieng",
-            5
-          ],
-          [
-            "Everlyn Asiko Chimoto",
-            1
-          ],
-          [
-            "Kamau Wahome",
-            3
-          ]
-        ]
-      },
-      "top_contributors": [
-        [
-          "Verrah Otiende",
-          51
-        ],
-        [
-          "Millicent Ochieng",
-          5
-        ],
-        [
-          "Kamau Wahome",
-          3
-        ],
-        [
-          "Everlyn Asiko Chimoto",
-          1
-        ]
-      ]
-    },
-    {
-      "name": "Niger",
-      "languages": [
-        {
-          "name": "Hausa",
-          "url_count": 50,
-          "contributor_count": 2,
-          "contributors": [
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam"
-          ],
-          "top_contributors": [
-            [
-              "Faisa Muhammad Adam",
-              38
-            ],
-            [
-              "Faisal Muhammad Adam",
-              12
-            ]
-          ]
-        }
-      ],
-      "total_urls": 50,
-      "total_contributors": 2,
-      "unique_contributors": [
-        "Faisa Muhammad Adam",
-        "Faisal Muhammad Adam"
-      ],
-      "language_stats": {
-        "Hausa": {
-          "name": "Hausa",
-          "url_count": 50,
-          "contributor_count": 2,
-          "contributors": [
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisa Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam",
-            "Faisal Muhammad Adam"
-          ],
-          "top_contributors": [
-            [
-              "Faisa Muhammad Adam",
-              38
-            ],
-            [
-              "Faisal Muhammad Adam",
-              12
-            ]
-          ]
-        }
-      },
-      "contributor_productivity": {
-        "high_producers": [],
-        "medium_producers": [
-          [
-            "Faisal Muhammad Adam",
-            12
-          ],
-          [
-            "Faisa Muhammad Adam",
-            38
-          ]
-        ],
         "low_producers": []
       },
       "top_contributors": [
         [
-          "Faisa Muhammad Adam",
-          38
-        ],
-        [
           "Faisal Muhammad Adam",
-          12
+          50
         ]
       ]
     },
@@ -2375,7 +2397,7 @@
       "languages": [
         {
           "name": "English",
-          "url_count": 13,
+          "url_count": 14,
           "contributor_count": 0,
           "contributors": [],
           "top_contributors": []
@@ -2461,17 +2483,17 @@
           ]
         }
       ],
-      "total_urls": 46,
+      "total_urls": 47,
       "total_contributors": 3,
       "unique_contributors": [
-        "Gideon Nakibinge",
+        "Arthur Kakande",
         "Faisal Muhammad Adam",
-        "Arthur Kakande"
+        "Gideon Nakibinge"
       ],
       "language_stats": {
         "English": {
           "name": "English",
-          "url_count": 13,
+          "url_count": 14,
           "contributor_count": 0,
           "contributors": [],
           "top_contributors": []
@@ -2818,6 +2840,124 @@
       ]
     },
     {
+      "name": "Benin",
+      "languages": [
+        {
+          "name": "Gungbe",
+          "url_count": 8,
+          "contributor_count": 1,
+          "contributors": [
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou"
+          ],
+          "top_contributors": [
+            [
+              "Tadagbé Péniel Laurel Dhossou",
+              8
+            ]
+          ]
+        },
+        {
+          "name": "Fon",
+          "url_count": 11,
+          "contributor_count": 1,
+          "contributors": [
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou"
+          ],
+          "top_contributors": [
+            [
+              "Tadagbé Péniel Laurel Dhossou",
+              11
+            ]
+          ]
+        }
+      ],
+      "total_urls": 19,
+      "total_contributors": 1,
+      "unique_contributors": [
+        "Tadagbé Péniel Laurel Dhossou"
+      ],
+      "language_stats": {
+        "Gungbe": {
+          "name": "Gungbe",
+          "url_count": 8,
+          "contributor_count": 1,
+          "contributors": [
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou"
+          ],
+          "top_contributors": [
+            [
+              "Tadagbé Péniel Laurel Dhossou",
+              8
+            ]
+          ]
+        },
+        "Fon": {
+          "name": "Fon",
+          "url_count": 11,
+          "contributor_count": 1,
+          "contributors": [
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou",
+            "Tadagbé Péniel Laurel Dhossou"
+          ],
+          "top_contributors": [
+            [
+              "Tadagbé Péniel Laurel Dhossou",
+              11
+            ]
+          ]
+        }
+      },
+      "contributor_productivity": {
+        "high_producers": [],
+        "medium_producers": [
+          [
+            "Tadagbé Péniel Laurel Dhossou",
+            19
+          ]
+        ],
+        "low_producers": []
+      },
+      "top_contributors": [
+        [
+          "Tadagbé Péniel Laurel Dhossou",
+          19
+        ]
+      ]
+    },
+    {
       "name": "Somalia",
       "languages": [
         {
@@ -2864,9 +3004,9 @@
       "total_urls": 18,
       "total_contributors": 3,
       "unique_contributors": [
+        "Abdullahi Mohamed Jibril",
         "Mohamed Gele",
-        "Xuanli He",
-        "Abdullahi Mohamed Jibril"
+        "Xuanli He"
       ],
       "language_stats": {
         "Somali": {
@@ -3049,106 +3189,97 @@
       ]
     },
     {
-      "name": "Benin",
+      "name": "Lesotho",
       "languages": [
         {
-          "name": "Gungbe",
-          "url_count": 6,
-          "contributor_count": 1,
+          "name": "Sesotho",
+          "url_count": 12,
+          "contributor_count": 2,
           "contributors": [
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou"
+            "Lekuba Ntoane",
+            "Lekuba Ntoane",
+            "Lekuba Ntoane",
+            "Lekuba Ntoane",
+            "Lekuba Ntoane",
+            "Kamohelo Makaaka",
+            "Kamohelo Makaaka",
+            "Kamohelo Makaaka",
+            "Kamohelo Makaaka",
+            "Kamohelo Makaaka",
+            "Kamohelo Makaaka",
+            "Kamohelo Makaaka"
           ],
           "top_contributors": [
             [
-              "Tadagbé Péniel Laurel Dhossou",
-              6
-            ]
-          ]
-        },
-        {
-          "name": "Fon",
-          "url_count": 6,
-          "contributor_count": 1,
-          "contributors": [
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou"
-          ],
-          "top_contributors": [
+              "Kamohelo Makaaka",
+              7
+            ],
             [
-              "Tadagbé Péniel Laurel Dhossou",
-              6
+              "Lekuba Ntoane",
+              5
             ]
           ]
         }
       ],
       "total_urls": 12,
-      "total_contributors": 1,
+      "total_contributors": 2,
       "unique_contributors": [
-        "Tadagbé Péniel Laurel Dhossou"
+        "Kamohelo Makaaka",
+        "Lekuba Ntoane"
       ],
       "language_stats": {
-        "Gungbe": {
-          "name": "Gungbe",
-          "url_count": 6,
-          "contributor_count": 1,
+        "Sesotho": {
+          "name": "Sesotho",
+          "url_count": 12,
+          "contributor_count": 2,
           "contributors": [
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou"
+            "Lekuba Ntoane",
+            "Lekuba Ntoane",
+            "Lekuba Ntoane",
+            "Lekuba Ntoane",
+            "Lekuba Ntoane",
+            "Kamohelo Makaaka",
+            "Kamohelo Makaaka",
+            "Kamohelo Makaaka",
+            "Kamohelo Makaaka",
+            "Kamohelo Makaaka",
+            "Kamohelo Makaaka",
+            "Kamohelo Makaaka"
           ],
           "top_contributors": [
             [
-              "Tadagbé Péniel Laurel Dhossou",
-              6
-            ]
-          ]
-        },
-        "Fon": {
-          "name": "Fon",
-          "url_count": 6,
-          "contributor_count": 1,
-          "contributors": [
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou",
-            "Tadagbé Péniel Laurel Dhossou"
-          ],
-          "top_contributors": [
+              "Kamohelo Makaaka",
+              7
+            ],
             [
-              "Tadagbé Péniel Laurel Dhossou",
-              6
+              "Lekuba Ntoane",
+              5
             ]
           ]
         }
       },
       "contributor_productivity": {
         "high_producers": [],
-        "medium_producers": [
+        "medium_producers": [],
+        "low_producers": [
           [
-            "Tadagbé Péniel Laurel Dhossou",
-            12
+            "Lekuba Ntoane",
+            5
+          ],
+          [
+            "Kamohelo Makaaka",
+            7
           ]
-        ],
-        "low_producers": []
+        ]
       },
       "top_contributors": [
         [
-          "Tadagbé Péniel Laurel Dhossou",
-          12
+          "Kamohelo Makaaka",
+          7
+        ],
+        [
+          "Lekuba Ntoane",
+          5
         ]
       ]
     },
@@ -3341,48 +3472,66 @@
       ]
     },
     {
-      "name": "Lesotho",
+      "name": "Tunisia",
       "languages": [
         {
-          "name": "Sesotho",
-          "url_count": 5,
-          "contributor_count": 1,
+          "name": "Tunisian Arabic",
+          "url_count": 4,
+          "contributor_count": 3,
           "contributors": [
-            "Lekuba Ntoane",
-            "Lekuba Ntoane",
-            "Lekuba Ntoane",
-            "Lekuba Ntoane",
-            "Lekuba Ntoane"
+            "Maha Jouini",
+            "Houda CHIHI",
+            "Nabil Badri",
+            "Nabil Badri",
+            "Nabil Badri"
           ],
           "top_contributors": [
             [
-              "Lekuba Ntoane",
-              5
+              "Nabil Badri",
+              3
+            ],
+            [
+              "Maha Jouini",
+              1
+            ],
+            [
+              "Houda CHIHI",
+              1
             ]
           ]
         }
       ],
-      "total_urls": 5,
-      "total_contributors": 1,
+      "total_urls": 4,
+      "total_contributors": 3,
       "unique_contributors": [
-        "Lekuba Ntoane"
+        "Nabil Badri",
+        "Maha Jouini",
+        "Houda CHIHI"
       ],
       "language_stats": {
-        "Sesotho": {
-          "name": "Sesotho",
-          "url_count": 5,
-          "contributor_count": 1,
+        "Tunisian Arabic": {
+          "name": "Tunisian Arabic",
+          "url_count": 4,
+          "contributor_count": 3,
           "contributors": [
-            "Lekuba Ntoane",
-            "Lekuba Ntoane",
-            "Lekuba Ntoane",
-            "Lekuba Ntoane",
-            "Lekuba Ntoane"
+            "Maha Jouini",
+            "Houda CHIHI",
+            "Nabil Badri",
+            "Nabil Badri",
+            "Nabil Badri"
           ],
           "top_contributors": [
             [
-              "Lekuba Ntoane",
-              5
+              "Nabil Badri",
+              3
+            ],
+            [
+              "Maha Jouini",
+              1
+            ],
+            [
+              "Houda CHIHI",
+              1
             ]
           ]
         }
@@ -3392,15 +3541,31 @@
         "medium_producers": [],
         "low_producers": [
           [
-            "Lekuba Ntoane",
-            5
+            "Maha Jouini",
+            1
+          ],
+          [
+            "Houda CHIHI",
+            1
+          ],
+          [
+            "Nabil Badri",
+            3
           ]
         ]
       },
       "top_contributors": [
         [
-          "Lekuba Ntoane",
-          5
+          "Nabil Badri",
+          3
+        ],
+        [
+          "Maha Jouini",
+          1
+        ],
+        [
+          "Houda CHIHI",
+          1
         ]
       ]
     },
@@ -3456,81 +3621,6 @@
       "top_contributors": [
         [
           "Ismael KONE",
-          1
-        ]
-      ]
-    },
-    {
-      "name": "Tunisia",
-      "languages": [
-        {
-          "name": "lang1",
-          "url_count": 1,
-          "contributor_count": 2,
-          "contributors": [
-            "Maha Jouini",
-            "Houda CHIHI"
-          ],
-          "top_contributors": [
-            [
-              "Maha Jouini",
-              1
-            ],
-            [
-              "Houda CHIHI",
-              1
-            ]
-          ]
-        }
-      ],
-      "total_urls": 1,
-      "total_contributors": 2,
-      "unique_contributors": [
-        "Maha Jouini",
-        "Houda CHIHI"
-      ],
-      "language_stats": {
-        "lang1": {
-          "name": "lang1",
-          "url_count": 1,
-          "contributor_count": 2,
-          "contributors": [
-            "Maha Jouini",
-            "Houda CHIHI"
-          ],
-          "top_contributors": [
-            [
-              "Maha Jouini",
-              1
-            ],
-            [
-              "Houda CHIHI",
-              1
-            ]
-          ]
-        }
-      },
-      "contributor_productivity": {
-        "high_producers": [],
-        "medium_producers": [],
-        "low_producers": [
-          [
-            "Maha Jouini",
-            1
-          ],
-          [
-            "Houda CHIHI",
-            1
-          ]
-        ]
-      },
-      "top_contributors": [
-        [
-          "Maha Jouini",
-          1
-        ],
-        [
-          "Houda CHIHI",
           1
         ]
       ]
@@ -3650,10 +3740,10 @@
   ],
   "summary_stats": {
     "total_countries": 18,
-    "total_languages": 34,
-    "total_urls": 672,
-    "total_unique_contributors": 70,
-    "avg_urls_per_country": 37,
+    "total_languages": 35,
+    "total_urls": 697,
+    "total_unique_contributors": 72,
+    "avg_urls_per_country": 39,
     "avg_contributors_per_country": 4,
     "avg_languages_per_country": 2
   },
@@ -3662,7 +3752,7 @@
     "by_url_count": [
       [
         "Hausa",
-        163
+        164
       ],
       [
         "Shona",
@@ -3670,7 +3760,7 @@
       ],
       [
         "Swahili",
-        59
+        64
       ],
       [
         "Arabic (Standard)",
@@ -3694,7 +3784,7 @@
       ],
       [
         "English",
-        27
+        28
       ],
       [
         "Zulu",
@@ -3721,24 +3811,24 @@
         14
       ],
       [
+        "Sesotho",
+        12
+      ],
+      [
         "Xhosa",
         11
       ],
       [
-        "Datasets (need downloading)",
-        7
+        "Fon",
+        11
       ],
       [
         "Gungbe",
-        6
+        8
       ],
       [
-        "Fon",
-        6
-      ],
-      [
-        "Sesotho",
-        5
+        "Datasets (need downloading)",
+        7
       ],
       [
         "Lingala",
@@ -3749,23 +3839,27 @@
         5
       ],
       [
-        "lang1",
+        "Northern Sotho",
         4
       ],
       [
-        "Northern Sotho",
+        "Tunisian Arabic",
         4
+      ],
+      [
+        "lang1",
+        3
       ],
       [
         "lang3",
         3
       ],
       [
-        "Tshiluba",
-        2
+        "Kikuyu",
+        3
       ],
       [
-        "Kikuyu",
+        "Tshiluba",
         2
       ],
       [
@@ -3775,17 +3869,9 @@
       [
         "RunyankoleRukiga",
         2
-      ],
-      [
-        "Dioula",
-        1
       ]
     ],
     "by_country_presence": [
-      [
-        "lang1",
-        2
-      ],
       [
         "Swahili",
         2
@@ -3808,10 +3894,6 @@
       ],
       [
         "Dioula",
-        1
-      ],
-      [
-        "Sesotho",
         1
       ],
       [
@@ -3847,39 +3929,43 @@
         1
       ],
       [
-        "Luo",
-        1
-      ],
-      [
-        "Kikuyu",
-        1
-      ],
-      [
         "Xhosa",
         1
       ],
       [
         "Northern Sotho",
         1
+      ],
+      [
+        "Swazi",
+        1
+      ],
+      [
+        "Amharic",
+        1
+      ],
+      [
+        "Afaan Oromo",
+        1
+      ],
+      [
+        "Tigrinya",
+        1
       ]
     ]
   },
   "top_contributors_global": [
     [
+      "Faisal Muhammad Adam",
+      144
+    ],
+    [
       "Xuanli He",
       131
     ],
     [
-      "Faisal Muhammad Adam",
-      106
-    ],
-    [
       "Verrah Otiende",
       51
-    ],
-    [
-      "Faisa Muhammad Adam",
-      38
     ],
     [
       "Emmanuel Rassou",
@@ -3898,6 +3984,10 @@
       24
     ],
     [
+      "Tadagbé Péniel Laurel Dhossou",
+      19
+    ],
+    [
       "Segun Aroyehun",
       16
     ],
@@ -3914,10 +4004,6 @@
       14
     ],
     [
-      "Tadagbé Péniel Laurel Dhossou",
-      12
-    ],
-    [
       "Gebrekirstos G. Gebremeskel",
       10
     ],
@@ -3930,6 +4016,10 @@
       7
     ],
     [
+      "Kamohelo Makaaka",
+      7
+    ],
+    [
       "Minyechil Alehegn",
       6
     ],
@@ -3938,11 +4028,11 @@
       6
     ],
     [
-      "Muhammad Musa Isa",
+      "Carol Muchemi",
       6
     ],
     [
-      "Obinna Okoyeigbo",
+      "Muhammad Musa Isa",
       6
     ]
   ],
@@ -3955,7 +4045,7 @@
         ],
         [
           "Faisal Muhammad Adam",
-          106
+          144
         ]
       ],
       "high_contributors": [
@@ -3983,7 +4073,7 @@
         ],
         [
           "Tadagbé Péniel Laurel Dhossou",
-          12
+          19
         ],
         [
           "Adamu Lawan",
@@ -4004,27 +4094,11 @@
         [
           "Ayodele Awokoya",
           24
-        ],
-        [
-          "Faisa Muhammad Adam",
-          38
         ]
       ],
       "casual_contributors": [
         [
           "Ismael KONE",
-          1
-        ],
-        [
-          "Lekuba Ntoane",
-          5
-        ],
-        [
-          "Maha Jouini",
-          1
-        ],
-        [
-          "Houda CHIHI",
           1
         ],
         [
@@ -4058,18 +4132,6 @@
         [
           "Samira Isimbi",
           1
-        ],
-        [
-          "Millicent Ochieng",
-          5
-        ],
-        [
-          "Everlyn Asiko Chimoto",
-          1
-        ],
-        [
-          "Kamau Wahome",
-          3
         ],
         [
           "Thapelo Sindane",
@@ -4128,6 +4190,50 @@
           1
         ],
         [
+          "Lekuba Ntoane",
+          5
+        ],
+        [
+          "Kamohelo Makaaka",
+          7
+        ],
+        [
+          "Millicent Ochieng",
+          5
+        ],
+        [
+          "Everlyn Asiko Chimoto",
+          1
+        ],
+        [
+          "Carol Muchemi",
+          6
+        ],
+        [
+          "Kamau Wahome",
+          3
+        ],
+        [
+          "Maha Jouini",
+          1
+        ],
+        [
+          "Houda CHIHI",
+          1
+        ],
+        [
+          "Nabil Badri",
+          3
+        ],
+        [
+          "Arthur Kakande",
+          5
+        ],
+        [
+          "Gideon Nakibinge",
+          2
+        ],
+        [
           "Tasi'u Jibril",
           1
         ],
@@ -4168,8 +4274,8 @@
           6
         ],
         [
-          "Ahmad Mustapha Wali/Buhari Hafizu Auwalu",
-          1
+          "Ahmad Mustapha Wali",
+          2
         ],
         [
           "Atiku Abubakar",
@@ -4181,6 +4287,10 @@
         ],
         [
           "Fatima Abubakar",
+          1
+        ],
+        [
+          "Nur Bala Rabiu",
           1
         ],
         [
@@ -4222,32 +4332,20 @@
         [
           "Idris Abdulmumin",
           2
-        ],
-        [
-          "Ahmad Mustapha Wali",
-          1
-        ],
-        [
-          "Arthur Kakande",
-          5
-        ],
-        [
-          "Gideon Nakibinge",
-          2
         ]
       ]
     },
     "tier_counts": {
       "super_contributors": 2,
       "high_contributors": 1,
-      "medium_contributors": 11,
-      "casual_contributors": 56
+      "medium_contributors": 10,
+      "casual_contributors": 59
     },
     "tier_percentages": {
-      "super_contributors": 2.9,
+      "super_contributors": 2.8,
       "high_contributors": 1.4,
-      "medium_contributors": 15.7,
-      "casual_contributors": 80.0
+      "medium_contributors": 13.9,
+      "casual_contributors": 81.9
     }
   },
   "coverage_analysis": {
@@ -4270,10 +4368,6 @@
       ],
       [
         "Swahili",
-        2
-      ],
-      [
-        "lang1",
         2
       ],
       [
@@ -4309,6 +4403,14 @@
         1
       ],
       [
+        "Luo",
+        1
+      ],
+      [
+        "Kikuyu",
+        1
+      ],
+      [
         "Arabic (Standard)",
         1
       ],
@@ -4321,15 +4423,11 @@
         1
       ],
       [
-        "Luo",
-        1
-      ],
-      [
-        "Kikuyu",
-        1
-      ],
-      [
         "Luganda",
+        1
+      ],
+      [
+        "RunyankoleRukiga",
         1
       ]
     ],
@@ -4337,8 +4435,8 @@
       {
         "language": "Hausa",
         "countries": [
-          "Nigeria",
-          "Niger"
+          "Niger",
+          "Nigeria"
         ],
         "country_count": 2
       },
@@ -4353,8 +4451,8 @@
       {
         "language": "Zulu",
         "countries": [
-          "South Africa",
-          "Zimbabwe"
+          "Zimbabwe",
+          "South Africa"
         ],
         "country_count": 2
       },
@@ -4369,16 +4467,8 @@
       {
         "language": "Swahili",
         "countries": [
-          "Kenya",
-          "Tanzania"
-        ],
-        "country_count": 2
-      },
-      {
-        "language": "lang1",
-        "countries": [
-          "Tunisia",
-          "Cameroon"
+          "Tanzania",
+          "Kenya"
         ],
         "country_count": 2
       },
@@ -4407,6 +4497,13 @@
         "language": "Shona",
         "countries": [
           "Zimbabwe"
+        ],
+        "country_count": 1
+      },
+      {
+        "language": "Amharic",
+        "countries": [
+          "Ethiopia"
         ],
         "country_count": 1
       }
